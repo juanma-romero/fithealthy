@@ -1,0 +1,166 @@
+/* Zoo Theme admin styles */
+.wp-admin {
+  /**************************************
+          Theme Dashboard Styles
+  **************************************/
+  /**************************************
+          Theme Settings Styles
+  **************************************/ }
+  .wp-admin .mega_menu_meta_box div.accordion_content {
+    padding: 0 0 20px 0 !important; }
+  .wp-admin .padding-5 {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .wp-admin .txt-input {
+    width: 100%;
+    padding: 0 15px; }
+  .wp-admin .txt-input textarea {
+    height: 40px;
+    width: 100%; }
+  .wp-admin .rwmb-input .rwmb-slider {
+    max-width: 250px;
+    border: none;
+    background: #ccc;
+    border-radius: 0; }
+  .wp-admin .rwmb-input .ui-slider-horizontal .ui-slider-handle {
+    margin-top: -3px;
+    margin-left: 0;
+    border-radius: 50%;
+    background: #00aef0;
+    transform: translateX(-50%);
+    border: none; }
+  .wp-admin .rwmb-input .ui-slider-horizontal .ui-slider-range-min {
+    background: #00aef0; }
+  .wp-admin .rwmb-input .ui-slider-horizontal .ui-slider-handle:hover, .wp-admin .rwmb-input .ui-slider-horizontal .ui-slider-handle:focus {
+    cursor: pointer;
+    background: #00AEF0; }
+  .wp-admin .rwmb-input .ui-slider-horizontal {
+    height: 3px; }
+  .wp-admin .rwmb-input .rwmb-slider-value-label {
+    padding: 5px 15px;
+    border-radius: 15px;
+    background: #00aef0;
+    color: #fff; }
+  .wp-admin .ui-datepicker .ui-datepicker-calendar {
+    display: table; }
+  .wp-admin .zoo-theme-welcome {
+    overflow: auto; }
+    .wp-admin .zoo-theme-welcome #welcome-panel {
+      margin-left: 8px;
+      margin-right: 8px; }
+    .wp-admin .zoo-theme-welcome .welcome-heading {
+      float: left; }
+      .wp-admin .zoo-theme-welcome .welcome-heading h1 {
+        font-size: 2rem; }
+    .wp-admin .zoo-theme-welcome .welcome-theme-logo {
+      float: right;
+      padding-right: 15px;
+      text-align: center; }
+      .wp-admin .zoo-theme-welcome .welcome-theme-logo p {
+        font-size: 10px;
+        margin: 0; }
+        .wp-admin .zoo-theme-welcome .welcome-theme-logo p span {
+          background-color: #23282d;
+          border-radius: 2px;
+          color: #fff;
+          padding: 2px 5px;
+          font-size: 9px; }
+    .wp-admin .zoo-theme-welcome .welcome-panel-column .dashicons {
+      color: #999; }
+    .wp-admin .zoo-theme-welcome #dashboard-widgets {
+      padding: 0 8px; }
+      .wp-admin .zoo-theme-welcome #dashboard-widgets table.system-status th {
+        font-weight: bold; }
+      .wp-admin .zoo-theme-welcome #dashboard-widgets table.system-status td {
+        min-width: 240px; }
+  .wp-admin .zoo-theme-settings {
+    background-color: #f1f1f1;
+    display: table;
+    margin: 0;
+    vertical-align: top; }
+    .wp-admin .zoo-theme-settings p.submit {
+      background-color: #fff;
+      padding-left: 18px;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .wp-admin .zoo-theme-settings p.description {
+      color: #999; }
+    .wp-admin .zoo-theme-settings span.description {
+      color: #999; }
+    .wp-admin .zoo-theme-settings table {
+      margin: 0;
+      padding: 18px 18px 0 18px;
+      width: 100%; }
+      .wp-admin .zoo-theme-settings table.active-tab {
+        background-color: #fff; }
+      .wp-admin .zoo-theme-settings table caption {
+        border-bottom: 1px solid #ddd;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 18px 18px 0 18px;
+        padding-bottom: 10px;
+        text-align: left;
+        text-transform: uppercase; }
+      .wp-admin .zoo-theme-settings table thead {
+        width: 100%; }
+      .wp-admin .zoo-theme-settings table tr {
+        display: block;
+        padding-bottom: 20px;
+        width: 100%; }
+        .wp-admin .zoo-theme-settings table tr th {
+          display: block;
+          padding: 10px 5px 10px 0;
+          width: 100%; }
+        .wp-admin .zoo-theme-settings table tr td {
+          display: block;
+          padding: 0;
+          text-align: left; }
+          .wp-admin .zoo-theme-settings table tr td label {
+            font-weight: bold; }
+            .wp-admin .zoo-theme-settings table tr td label span.description {
+              font-weight: normal; }
+          .wp-admin .zoo-theme-settings table tr td input[type="text"], .wp-admin .zoo-theme-settings table tr td input[type="email"], .wp-admin .zoo-theme-settings table tr td input[type="number"] {
+            width: 50%;
+            min-width: 320px;
+            padding: 5px 8px; }
+    .wp-admin .zoo-theme-settings .nav-bar {
+      background-color: #f1f1f1;
+      display: table-cell;
+      min-width: 220px;
+      vertical-align: top; }
+      .wp-admin .zoo-theme-settings .nav-bar .theme-logo {
+        border-right: 1px solid #ddd;
+        padding: 10px 0;
+        text-align: center; }
+        .wp-admin .zoo-theme-settings .nav-bar .theme-logo img {
+          padding-top: 10px; }
+        .wp-admin .zoo-theme-settings .nav-bar .theme-logo span {
+          background-color: #23282d;
+          border-radius: 2px;
+          color: #fff;
+          padding: 2px 5px; }
+      .wp-admin .zoo-theme-settings .nav-bar ul {
+        margin: 0;
+        padding: 0; }
+        .wp-admin .zoo-theme-settings .nav-bar ul li {
+          font-weight: bold;
+          margin: 0; }
+          .wp-admin .zoo-theme-settings .nav-bar ul li:first-child {
+            border-top: 0; }
+          .wp-admin .zoo-theme-settings .nav-bar ul li a {
+            border-top: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            display: block;
+            padding: 12px;
+            text-decoration: none; }
+            .wp-admin .zoo-theme-settings .nav-bar ul li a.active-item {
+              border-right: 0;
+              background-color: #fff; }
+    .wp-admin .zoo-theme-settings .content-tabs {
+      background-color: #fff;
+      display: table-cell;
+      min-height: 100%;
+      width: 100%;
+      vertical-align: top; }
+
+/*# sourceMappingURL=admin.css.map */

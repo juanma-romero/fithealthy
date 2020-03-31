@@ -1,0 +1,118 @@
+version: '3' 
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: spocket
+      MYSQL_USER: spocket_user
+      MYSQL_PASSWORD: spocket_pass
+    expose:
+      - "3306"
+
+  traefik:
+    image: traefik:1.7
+    command: traefik --api --docker
+    networks:
+      - web
+    ports:
+      - "80:80"
+      - "8000:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik.toml:/traefik.toml
+    labels:
+      - 'traefik.enable=false'
+
+  wordpress:
+    image: wordpress:5.2.2-php7.3-apache
+    depends_on:
+      - db
+      - traefik
+    restart: always
+    networks:
+      - web
+      - default
+    environment:
+      WORDPRESS_DB_HOST: "db:3306"
+      WORDPRESS_DB_USER: "spocket_user"
+      WORDPRESS_DB_PASSWORD: "spocket_pass"
+      WORDPRESS_DB_NAME: "spocket"
+      WORDPRESS_DEBUG: 1
+      APACHE_RUN_USER: "#1000"
+      APACHE_RUN_GROUP: "#1000"
+    env_file:
+      - ./.env.development
+    volumes:
+      - "./woocommerce:/var/www/html/wp-content/plugins/woocommerce:ro"
+      - "./test-gateway-for-woocommerce:/var/www/html/wp-content/plugins/test-gateway-for-woocommerce:ro"
+      - "./:/var/www/html/wp-content/plugins/spocket:ro"
+    labels:
+      - "traefik.backend=wordpress"
+      - "traefik.docker.network=web"
+      - "traefik.frontend.rule=Host:woocommerce.local,localhost"
+      - "traefik.enable=true"
+      - "traefik.port=80"
+      - "traefik.protocol=http"
+  wordpress2:
+    image: wordpress:5.2.2-php7.3-apache
+    depends_on:
+      - db
+      - traefik
+    restart: always
+    ports:
+      - 81:80
+    networks:
+      - web
+      - default
+    environment:
+      WORDPRESS_DB_HOST: "db:3306"
+      WORDPRESS_DB_USER: "spocket_user"
+      WORDPRESS_DB_PASSWORD: "spocket_pass"
+      WORDPRESS_DB_NAME: "spocket"
+      WORDPRESS_TABLE_PREFIX: "wp2"
+      WORDPRESS_DEBUG: 1
+      APACHE_RUN_USER: "#1000"
+      APACHE_RUN_GROUP: "#1000"
+
+    env_file:
+      - ./.env.development
+    volumes:
+      - "./woocommerce:/var/www/html/wp-content/plugins/woocommerce:ro"
+      - "./test-gateway-for-woocommerce:/var/www/html/wp-content/plugins/test-gateway-for-woocommerce:ro"
+      - "./:/var/www/html/wp-content/plugins/spocket:ro"
+    labels:
+      - "traefik.backend=wordpress2"
+      - "traefik.docker.network=web"
+      - "traefik.frontend.rule=Host:woocommerce2.local"
+      - "traefik.enable=true"
+      - "traefik.port=80"
+      - "traefik.protocol=http"
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      - db
+    ports:
+      - "8083:80"
+    networks:
+      - web
+      - default
+
+  composer:
+    restart: 'no'
+    image: composer
+    working_dir: /var/www/wp-content/plugins/spocket
+    command: install
+    volumes:
+      - .:/var/www/html/wp-content/plugins/spocket
+
+volumes:
+  db_data: {}
+  wp: {}
+
+networks:
+  web:
+    external: true

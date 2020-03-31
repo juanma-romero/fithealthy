@@ -1,0 +1,232 @@
+/* Zoo Theme admin styles */
+.wp-admin {
+    .mega_menu_meta_box div.accordion_content{
+      padding: 0 0 20px 0!important;
+    }
+    .padding-5{
+      padding-top:5px;
+      padding-bottom:5px;
+    }
+    .txt-input{
+      width: 100%;
+      padding:0 15px
+    }
+    .txt-input textarea{
+      height: 40px;
+      width: 100%;
+    }
+    .rwmb-input .rwmb-slider{
+      max-width: 250px;
+      border:none;
+      background: #ccc;
+      border-radius: 0;
+    }
+    .rwmb-input .ui-slider-horizontal .ui-slider-handle{
+      margin-top:  -3px;
+      margin-left: 0;
+      border-radius: 50%;
+      background: #00aef0;
+      transform:translateX(-50%);
+      border: none;
+    }
+    .rwmb-input .ui-slider-horizontal .ui-slider-range-min{
+      background: #00aef0;
+    }
+    .rwmb-input .ui-slider-horizontal .ui-slider-handle:hover, .rwmb-input .ui-slider-horizontal .ui-slider-handle:focus{
+      cursor: pointer;
+      background: #00AEF0;
+    }
+    .rwmb-input .ui-slider-horizontal{
+      height: 3px;
+    }
+    .rwmb-input .rwmb-slider-value-label{
+      padding:5px 15px;
+      border-radius: 15px;
+      background: #00aef0;
+      color: #fff;
+    }
+    .ui-datepicker .ui-datepicker-calendar{
+      display: table;
+    }
+
+    /**************************************
+            Theme Dashboard Styles
+    **************************************/
+    .zoo-theme-welcome {
+        overflow: auto;
+        // .updated, .notice, .update-nag {
+        //     display: none;
+        // }
+        #welcome-panel {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        .welcome-heading {
+            float: left;
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        .welcome-theme-logo {
+            float: right;
+            padding-right: 15px;
+            text-align: center;
+            p {
+                font-size: 10px;
+                margin: 0;
+                span {
+                  background-color: #23282d;
+                  border-radius: 2px;
+                  color: #fff;
+                  padding: 2px 5px;
+                  font-size: 9px;
+                }
+            }
+        }
+        .welcome-panel-column {
+            .dashicons {
+                color: #999;
+            }
+        }
+        #dashboard-widgets {
+            padding: 0 8px;
+            table.system-status {
+                th {
+                    font-weight: bold;
+                }
+                td {
+                    min-width: 240px;
+                }
+            }
+        }
+    }
+
+    /**************************************
+            Theme Settings Styles
+    **************************************/
+    // .notice, .updated, .update-nag {
+    //     margin: 20px 12px;
+    // }
+    // #wpcontent {
+    //   padding-left: 0;
+    // }
+    .zoo-theme-settings {
+      background-color: #f1f1f1;
+      display: table;
+      margin: 0;
+      vertical-align: top;
+        p {
+            &.submit {
+                background-color: #fff;
+                padding-left: 18px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            &.description {
+              color: #999;
+            }
+        }
+        span {
+            &.description {
+                color: #999;
+            }
+        }
+        table {
+          margin: 0;
+          padding: 18px 18px 0 18px;
+          width: 100%;
+          &.active-tab {
+            background-color: #fff;
+          }
+          caption {
+            border-bottom: 1px solid #ddd;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 18px 18px 0 18px;
+            padding-bottom: 10px;
+            text-align: left;
+            text-transform: uppercase;
+          }
+          thead {
+            width: 100%;
+          }
+          tr {
+            display: block;
+            padding-bottom: 20px;
+            width: 100%;
+            th {
+              display: block;
+              padding: 10px 5px 10px 0;
+              width: 100%;
+            }
+            td {
+              display: block;
+              padding: 0;
+              text-align: left;
+              label {
+                font-weight: bold;
+                span {
+                    &.description {
+                        font-weight: normal;
+                    }
+                }
+              }
+              input[type="text"], input[type="email"], input[type="number"] {
+                width: 50%;
+                min-width: 320px;
+                padding: 5px 8px;
+              }
+            }
+          }
+        }
+        .nav-bar {
+          background-color: #f1f1f1;
+          display: table-cell;
+          min-width: 220px;
+          vertical-align: top;
+          .theme-logo {
+            border-right: 1px solid #ddd;
+            padding: 10px 0;
+            text-align: center;
+            img {
+              padding-top: 10px;
+            }
+            span {
+              background-color: #23282d;
+              border-radius: 2px;
+              color: #fff;
+              padding: 2px 5px;
+            }
+          }
+          ul {
+            margin: 0;
+            padding: 0;
+            li {
+              font-weight: bold;
+              margin: 0;
+              &:first-child {
+                border-top: 0;
+              }
+              a {
+                border-top: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                display: block;
+                padding: 12px;
+                text-decoration: none;
+                &.active-item {
+                  border-right: 0;
+                  background-color: #fff;
+                }
+              }
+            }
+          }
+        }
+        .content-tabs {
+          background-color: #fff;
+          display: table-cell;
+          min-height: 100%;
+          width: 100%;
+          vertical-align: top;
+        }
+    }
+}

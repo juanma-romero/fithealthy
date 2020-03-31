@@ -1,0 +1,13 @@
+
+# BEGIN rules managed by Control Panel > WordPress
+# !!9zZPRCMA5NS0Jsg7no2wx5KtUcw:eyJzZWN1cmUiOjF9
+
+### BEGIN PHP Security rules enabled via Control Panel > WordPress ###
+Options -Indexes
+# Execution prevention
+<Files ~ "\.ph(?:p[345]?|t|tml)$">
+   deny from all
+</Files>
+#### END PHP Security rules enabled via Control Panel > WordPress ####
+
+# END rules managed by Control Panel > WordPress

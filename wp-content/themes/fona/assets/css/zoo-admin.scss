@@ -1,0 +1,86 @@
+/* Reset css, default css, css head layout*/
+@mixin transition-all($time) {
+  transition: all $time;
+  -webkit-transition: all $time;
+  -moz-transition: all $time;
+  -o-transition: all $time;
+  -ms-transition: all $time;
+}
+
+@mixin transition($val) {
+  transition: $val;
+  -webkit-transition: $val;
+  -moz-transition: $val;
+  -o-transition: $val;
+  -ms-transition: $val;
+}
+
+@mixin border-radius($val) {
+  border-radius: $val;
+  -moz-border-radius: $val;
+  -o-border-radius: $val;
+  -webkit-border-radius: $val;
+  -ms-border-radius: $val;
+}
+
+@mixin transform($val) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -ms-transform: $val;
+  -o-transform: $val;
+  transform: $val
+}
+
+@mixin px2rem($val) {
+  font-size: $val/14+rem;
+}
+
+/*Color*/
+$accent_color: #fc6a21;
+$sec_accent_color: #555555;
+//Menu color, heding color, title color
+$title_color: #333333;
+$bg_top_header: #000;
+$body_color: #999;
+/*Menu color*/
+$nav_color: #333333;
+/*Title widget*/
+$title_sidebar_color: #333333;
+$tag_color: #0172ff;
+$sidebar-color: #555555;
+//top head color, post infor color,
+$breadcrumb_color: #7d7d7d;
+//Color border
+$border_color: #ebebeb;
+//date post color
+$date_post: #999999;
+//Bg breadcrumb
+$bg_block: #f7f7f7;
+//Block color archive page, sidebar color
+$color_except: #636363;
+//Footer bg
+$footer_bg: #f7f7f7;
+$footer_color: #666666;
+$white_text: #fff;
+$bottom_footer_bg: #282828;
+$bottom_footer_color: #aaaaaa;
+$black_transparent_1: rgba(0, 0, 0, 0.1);
+$black_transparent_2: rgba(0, 0, 0, 0.2);
+$black_transparent_4: rgba(0, 0, 0, 0.4);
+$black_transparent_5: rgba(0, 0, 0, 0.5);
+$black_transparent_8: rgba(0, 0, 0, 0.8);
+$black_transparent_9: rgba(0, 0, 0, 0.9);
+$white_transparent_9: rgba(255, 255, 255, 0.9);
+$white_transparent_8: rgba(255, 255, 255, 0.8);
+$white_transparent_5: rgba(255, 255, 255, 0.5);
+$white_transparent_2: rgba(255, 255, 255, 0.2);
+$white_transparent_1: rgba(255, 255, 255, 0.1);
+/*End color*/
+.vc-c-icon-l_16_13_12, .vc-c-icon-l_16_712_14, .vc-c-icon-l_16_13_13_16{
+  width: 25px;
+  height: 15px;
+  display: block;
+}
+.vc-c-icon-l_16_13_12{ background: url('../images/layout_311.png');}
+.vc-c-icon-l_16_712_14{ background: url('../images/layout_331.png');}
+.vc-c-icon-l_16_13_13_16{ background: url('../images/layout_418.png');}

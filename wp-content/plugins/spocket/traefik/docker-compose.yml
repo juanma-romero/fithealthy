@@ -1,0 +1,20 @@
+version: '3.0'
+
+services:
+  traefik:
+    image: traefik
+    command: traefik --api --docker
+    networks:
+      - web
+    ports:
+      - "80:80"
+      - "8000:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ../traefik.toml:/traefik.toml
+    labels:
+      - 'traefik.enable=false'
+
+networks:
+  web:
+    external: true

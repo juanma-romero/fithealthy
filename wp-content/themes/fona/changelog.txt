@@ -1,0 +1,101 @@
+###Version 1.3.5 Release Aug 29, 2019
+- Update Revolution slider to 6.0.9
+- Update WPBakery Page Builder to 6.0.5
+- Update Clever Swatches to 2.1.6
+- Update Clever Layered Navigation to 1.3.3
+- Compatible with WooCommerce 3.7
+
+###Version 1.3.4 Release Apr 22, 2019
+- Update Revolution slider to 5.4.8.3
+- Update WPBakery Page Builder to 5.7
+- Update Clever Swatches to 2.1.4
+- Compatible with WooCommerce 3.6.1
+
+###Version 1.3.3 Release Nov 06, 2018
+- Update WPBakery Page Builder to 5.5.5
+- Update Clever Swatches to 2.1.2
+- Compatible with WooCommerce 3.5.1
+
+###Version 1.3.2 Release July 16, 2018
+- Update Revolution slider to 5.4.8
+- Update WPBakery Page Builder to 5.5.2
+- Update Clever Layered Navigation to 1.3.0
+- Fix issue change footer widget title color.
+- Fix issue translate text of WooCommerce template.
+- Fix issue with free shipping when free shipping not config.
+- Fix issue of Ajax add to cart of single product page with Grouped product and External/Affiliate product.
+- Fix issue with layout sticky broken on Google Chrome browser.
+
+###Version 1.3.1 Release May 25, 2018
+- Compatible with WooCommerce 3.4
+
+###Version 1.3.0 Release May 17, 2018
+- Add support GDPR.
+- Improve template.
+
+###Version 1.2.0 Release May 15, 2018
+- Add home 13.
+- Add new header MENU bottom.
+- Fix issue quickview not working after filter.
+- Update Clever Layered Navigation to version 1.2.1.
+- Update Clever MegaMenu to version 1.0.9.
+
+###Version 1.1.10 Release May 8, 2018
+- Improve theme style.
+- Fix issue of theme with IE 11 when click to link.
+- Update Clever Swatches to version 2.1.0.
+
+###Version 1.1.9 Release May 2, 2018
+- Add top sidebar widget.
+- Fix issue with Grouped product can't add to cart.
+- Update Clever Layered Navigation to version 1.1.1.
+- Update Revolution slider to version 5.4.7.3.
+
+###Version 1.1.8 Release Apr 20, 2018
+- Add template and functions for support plugin WC Marketplace (WCMp).
+- Fix issue of Cart Free shipping notice when product remove in mini cart.
+- Fix issue logo disappear when hover header.
+- Fix issue with change color of customize.
+- Update language file.
+- Update Clever Layered Navigation to version 1.1.0
+
+###Version 1.1.7 Release Apr 20, 2018
+- Add Cart Free shipping notice.
+- Fix some issue with mobile.
+
+###Version 1.1.6 Release Apr 14, 2018
+- Update home landing layout.
+- Add new footer style, style 2.
+- Add new home 12.
+- Add new shortcode Category banner (Update Clever VC addon require).
+
+###Version 1.1.5 Release Mar 28, 2018
+- Add Ajax restore product remove from canvas cart.
+- Improve mobile cart.
+- Improve style.
+
+###Version 1.1.4 Release Mar 26, 2018
+- Fix issue with single product gallery when window resize.
+- Improve style and WooCommerce template.
+- Update Revolution slider to 5.4.7.2
+
+###Version 1.1.3 Release Mar 22, 2018
+- Improve mobile style.
+- Add option allow disable product buttons on mobile.
+- Update Clever swatches 2.0.7
+
+###Version 1.1.2 Release Mar 19, 2018
+- Update clever swatches 2.0.6.
+- Style improve
+
+###Version 1.1.1 Release Mar 17, 2018
+- Add Google AMP Support.
+- Style improve
+
+###Version 1.1.0 Release Mar 14, 2018
+- Improve template style.
+- Add social Login.
+- Update Visual composer to 5.4.7
+- Update Revolution slider to 5.4.7.1
+
+###Version 1.0.0 Release Mar 05, 2018
